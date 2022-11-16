@@ -71,7 +71,7 @@ if ask == '1':
 
     da_id = id.replace('Athena_Commando_', '')
 
-    json_object['meta']['NewDisplayAssetPath'] = f"/Game/Catalog/NewDisplayAssets/DAv2_{da_id}.DAv2_{da_id}"
+    json_object['meta']['NewDisplayAssetPath'] = f"/Game/Catalog/NewDisplayAssets/S22/DAv2_{da_id}.DAv2_{da_id}"
     
     json_object['meta']['SectionId'] = section
 
@@ -80,7 +80,7 @@ if ask == '1':
     json_object['metaInfo'] = [
         {
             "key": "NewDisplayAssetPath",
-            "value": f"/Game/Catalog/NewDisplayAssets/DAv2_{da_id}.DAv2_{da_id}"
+            "value": f"/Game/Catalog/NewDisplayAssets/S22/DAv2_{da_id}.DAv2_{da_id}"
         },
         {
             "key": "offertag",
@@ -182,7 +182,7 @@ elif ask == '2': #
                 }
             ],
             "meta": {
-                "NewDisplayAssetPath": f"/Game/Catalog/NewDisplayAssets/DAv2_{da_id}.DAv2_{da_id}",
+                "NewDisplayAssetPath": f"/Game/Catalog/NewDisplayAssets/S22/DAv2_{da_id}.DAv2_{da_id}",
                 "offertag": "",
                 "SectionId": f"{section}",
                 "TileSize": f"{tilesize}",
@@ -212,7 +212,7 @@ elif ask == '2': #
             "metaInfo": [
                 {
                     "key": "NewDisplayAssetPath",
-                    "value": f"/Game/Catalog/NewDisplayAssets/DAv2_{da_id}.DAv2_{da_id}"
+                    "value": f"/Game/Catalog/NewDisplayAssets/S22/DAv2_{da_id}.DAv2_{da_id}"
                 },
                 {
                     "key": "offertag",
@@ -284,11 +284,11 @@ elif ask == '3':
         backendtype = i['type']['backendValue']
         name = i['name']
         da_id = id.replace('Athena_Commando_', '')
-        #r = requests.get(f'https://benbot.app/api/v1/files/search?path=/Game/Catalog/NewDisplayAssets/DAv2_{da_id}')
-        #try:
-        #    load = json.loads(r)
-        #except:
-        #    tilesize = 'Small'
+        r = requests.get(f'https://fortnitecentral.gmatrixgames.ga/api/v1/export?path=/Game/Catalog/NewDisplayAssets/S22/DAv2_{da_id}')
+        try:
+            load = json.loads(r)
+        except:
+            tilesize = 'Small'
         if onlyskins == True:
             if backendtype == 'AthenaCharacter':
                 json_object.append({
@@ -334,7 +334,7 @@ elif ask == '3':
                     "metaInfo": [
                         {
                             "key": "NewDisplayAssetPath",
-                            "value": f"/Game/Catalog/NewDisplayAssets/DAv2_{da_id}.DAv2_{da_id}"
+                            "value": f"/Game/Catalog/NewDisplayAssets/S22/DAv2_{da_id}.DAv2_{da_id}"
                         },
                         {
                             "key": "SectionId",
@@ -383,7 +383,7 @@ elif ask == '3':
                         }
                     ],
                     "meta": {
-                        "NewDisplayAssetPath": f"/Game/Catalog/NewDisplayAssets/DAv2_{da_id}.DAv2_{da_id}",
+                        "NewDisplayAssetPath": f"/Game/Catalog/NewDisplayAssets/S22/DAv2_{da_id}.DAv2_{da_id}",
                         "SectionId": f"{section}",
                         "TileSize": f"{tilesize}",
                         "AnalyticOfferGroupId": ""
@@ -409,7 +409,7 @@ elif ask == '3':
                     "metaInfo": [
                         {
                             "key": "NewDisplayAssetPath",
-                            "value": f"/Game/Catalog/NewDisplayAssets/DAv2_{da_id}.DAv2_{da_id}"
+                            "value": f"/Game/Catalog/NewDisplayAssets/S22/DAv2_{da_id}.DAv2_{da_id}"
                         },
                         {
                             "key": "SectionId",
@@ -486,7 +486,7 @@ elif ask == '4':
                 }
             ],
             "meta": {
-                "NewDisplayAssetPath": f"/Game/Catalog/NewDisplayAssets/DAv2_{da_id}.DAv2_{da_id}",
+                "NewDisplayAssetPath": f"/Game/Catalog/NewDisplayAssets/S22/DAv2_{da_id}.DAv2_{da_id}",
                 "offertag": "",
                 "SectionId": f"{section}",
                 "TileSize": f"{tilesize}",
@@ -516,7 +516,7 @@ elif ask == '4':
             "metaInfo": [
                 {
                     "key": "NewDisplayAssetPath",
-                    "value": f"/Game/Catalog/NewDisplayAssets/DAv2_{da_id}.DAv2_{da_id}"
+                    "value": f"/Game/Catalog/NewDisplayAssets/S22/DAv2_{da_id}.DAv2_{da_id}"
                 },
                 {
                     "key": "offertag",
@@ -607,7 +607,7 @@ elif ask == '5':
                     }
                 ],
                 "meta": {
-                    "NewDisplayAssetPath": f"/Game/Catalog/NewDisplayAssets/{newda}.{newda}",
+                    "NewDisplayAssetPath": f"/Game/Catalog/NewDisplayAssets/S22/{newda}.{newda}",
                     "SectionId": "LimitedTime",
                     "TileSize": "DoubleWide",
                     "AnalyticOfferGroupId": "2"
@@ -632,7 +632,7 @@ elif ask == '5':
                     },
                     {
                         "key": "NewDisplayAssetPath",
-                        "value": f"/Game/Catalog/NewDisplayAssets/{newda}.{newda}"
+                        "value": f"/Game/Catalog/NewDisplayAssets/S22/{newda}.{newda}"
                     },
                     {
                         "key": "TileSize",
@@ -676,7 +676,7 @@ elif ask == '5':
                     "bundleItems": []
                 },
                 "meta": {
-                    "NewDisplayAssetPath": f"/Game/Catalog/NewDisplayAssets/{newda}.{newda}",
+                    "NewDisplayAssetPath": f"/Game/Catalog/NewDisplayAssets/S22/{newda}.{newda}",
                     "SectionId": "LimitedTime",
                     "TileSize": "DoubleWide",
                     "AnalyticOfferGroupId": "3"
@@ -696,7 +696,7 @@ elif ask == '5':
                 "metaInfo": [
                     {
                         "key": "NewDisplayAssetPath",
-                        "value": f"/Game/Catalog/NewDisplayAssets/{newda}.{newda}"
+                        "value": f"/Game/Catalog/NewDisplayAssets/S22/{newda}.{newda}"
                     },
                     {
                         "key": "SectionId",
@@ -764,7 +764,7 @@ elif ask == '5':
                 }
             )
 
-#elif ask == 'c' or ask == 'C':
+elif ask == 'c' or ask == 'C':
     with open(f'shopraw.json', 'w') as x:
         ting = {
             "refreshIntervalHrs": 1,
@@ -786,13 +786,13 @@ elif ask == '5':
 
         json.dump(ting, x, indent = 4)
 
-#elif ask == '6':
+elif ask == '6':
     print('What pak do you want to get')
     pak = input('>> ')
-    response = requests.get(f'https://benbot.app/api/v1/cosmetics/br/dynamic/{pak}')
+    response = requests.get(f'https://fortnite-api.com/v2/cosmetics/br/search/all?dynamicPakId={pak}')
     print('\nWhat section do you wanna use')
     section = input('>> ')
-
+    
     try:
         if response.json()['error'] != None:
             print('An error has occured. Please re-run the program and try again.')
@@ -807,13 +807,13 @@ elif ask == '5':
     a_file = open(f"shop.json", "r")
     json_object = json.load(a_file)
     a_file.close()
-
-    for i in response.json():
+    
+    for i in response.json()['data']:
         start = time.time()
         price = 420
         tilesize = 'Normal'
         id = i['id']
-        backendtype = i['backendType']
+        backendtype = i['type']['backendValue']
         name = i['name']
         da_id = id.replace('Athena_Commando_', '')
 
@@ -839,7 +839,7 @@ elif ask == '5':
                     }
                 ],
                 "meta": {
-                    "NewDisplayAssetPath": f"/Game/Catalog/NewDisplayAssets/DAv2_{da_id}.DAv2_{da_id}",
+                    "NewDisplayAssetPath": f"/Game/Catalog/NewDisplayAssets/S22/DAv2_{da_id}.DAv2_{da_id}",
                     "SectionId": f"{section}",
                     "TileSize": f"{tilesize}",
                     "AnalyticOfferGroupId": ""
@@ -865,7 +865,7 @@ elif ask == '5':
                 "metaInfo": [
                     {
                         "key": "NewDisplayAssetPath",
-                        "value": f"/Game/Catalog/NewDisplayAssets/DAv2_{da_id}.DAv2_{da_id}"
+                        "value": f"/Game/Catalog/NewDisplayAssets/S22/DAv2_{da_id}.DAv2_{da_id}"
                     },
                     {
                         "key": "SectionId",
@@ -892,8 +892,8 @@ elif ask == '5':
                 "catalogGroupPriority": 0
             })
 
-#elif ask == '7':
-    response = requests.get('https://benbot.app/api/v1/shop/raw')
+elif ask == '7':
+    response = requests.get('https://api.nitestats.com/v1/epic/store')
 
     with open(f'shop.json', 'w') as x:
         json.dump(response.json(), x, indent = 4)

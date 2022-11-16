@@ -13,6 +13,8 @@ This program is inspired by the Shop Generator by [InTheShade](https://github.co
 - Existing item bundle shop generation
 - Generation in under a second
 - Paid bundle support
+- Get items from a pak
+- Generate current Item Shop
 
 # How-To-Use
 Where to put data:
